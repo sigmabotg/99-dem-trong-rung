@@ -1032,7 +1032,7 @@ end)
 end,
 })
 local PlayerDistanceAutoChopTreeSlider = GameTab:CreateSlider({
-   Name = "Distance For Auto Chop Tree(Recommended to put below 250 if you have strong axe or chainsaw)",
+   Name = "sức mạnh của chặt cây=))(Nếu mày có cái rìu ngon hoặc cưa thì nên 250 thôi)",
    Range = {0, 1000},
    Increment = 0.1,
    Suffix = "Distance",
