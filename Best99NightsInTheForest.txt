@@ -47,7 +47,7 @@ local ParagraphInfoServer = InfoTab:CreateParagraph({Title = "Info", Content = "
 local DistanceForKillAura = 25
 local DistanceForAutoChopTree = 25
 Rayfield:Notify({
-   Title = "Cheat Version",
+   Title = "Phiên bản gian lận",
    Content = "V.0.19",
    Duration = 2.5,
    Image = "rewind",
@@ -344,7 +344,7 @@ copyToClipboard("https://discord.gg/Tsa6XzWkrs")
 end,
 })
 local PlayerNoclipToggle = PlayerTab:CreateToggle({
-   Name = "Noclip",
+   Name = "xuyên tường",
    CurrentValue = false,
    Flag = "ButtonNoclip", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -373,7 +373,7 @@ end)
 end,
 })
 local PlayerInfiniteJumpToggle = PlayerTab:CreateToggle({
-   Name = "Infinite Jump",
+   Name = "vô hạn nhảy",
    CurrentValue = false,
    Flag = "ButtonInfiniteJump", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -396,7 +396,7 @@ end
 end,
 })
 local EspItemsToggle = EspTab:CreateToggle({
-   Name = "Items Esp",
+   Name = "vậy phẩm",
    CurrentValue = false,
    Flag = "EspItems",
    Callback = function(Value)
@@ -422,9 +422,9 @@ end)
 end,
 })
 local EspEnemyToggle = EspTab:CreateToggle({
-   Name = "Enemy Esp",
+   Name = "kẻ địch",
    CurrentValue = false,
-   Flag = "EspEnemy",
+   Flag = "kẻ địch",
    Callback = function(Value)
   ActiveEspEnemy = Value 
 task.spawn(function()
@@ -448,9 +448,9 @@ end)
 end,
 })
 local EspChildrensToggle = EspTab:CreateToggle({
-   Name = "Childrens Esp",
+   Name = "nhìn thằng nhóc",
    CurrentValue = false,
-   Flag = "EspChildrens",
+   Flag = "thằng nhóc",
    Callback = function(Value)
   ActiveEspChildren = Value 
 task.spawn(function()
@@ -474,9 +474,9 @@ end)
 end,
 })
 local EspPeltTraderToggle = EspTab:CreateToggle({
-   Name = "Pelt Trader Esp",
+   Name = "nhìn ông trao đổi",
    CurrentValue = false,
-   Flag = "EspPeltTrader",
+   Flag = "ông trao đổi",
    Callback = function(Value)
   ActiveEspPeltTrader = Value 
 task.spawn(function()
@@ -500,7 +500,7 @@ end)
 end,
 })
 local ButtonBringAllItems = BringItemTab:CreateButton({
-   Name = "Bring All Items",
+   Name = "lấy tất cả vật phẩm",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -515,7 +515,7 @@ end)
 end,
 })
 local ButtonBringAllLogs = BringItemTab:CreateButton({
-   Name = "Bring All Logs",
+   Name = "lấy tất cả gỗ",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -528,7 +528,7 @@ end)
 end,
 })
 local ButtonBringAllCoal = BringItemTab:CreateButton({
-   Name = "Bring All Coal",
+   Name = "lấy tất cả than",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -542,7 +542,7 @@ end)
 end,
 })
 local ButtonBringAllFuelCanister = BringItemTab:CreateButton({
-   Name = "Bring All Fuel Canister",
+   Name = "lấy tất cả Bình nhiên liệu",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -555,7 +555,7 @@ end)
 end,
 })
 local ButtonBringAllCarrot = BringItemTab:CreateButton({
-   Name = "Bring All Carrot",
+   Name = "lấy tất cả cà rồt",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -568,7 +568,7 @@ end)
 end,
 })
 local ButtonBringAllFuel = BringItemTab:CreateButton({
-   Name = "Bring All Fuel",
+   Name = "lấy tất cả nhiên liệu",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -581,7 +581,7 @@ end)
 end,
 })
 local ButtonBringAllScraps = BringItemTab:CreateButton({
-   Name = "Bring All Scraps",
+   Name = "lấy tất cả sắt",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -594,7 +594,7 @@ end)
 end,
 })
 local ButtonBringAllAmmo = BringItemTab:CreateButton({
-   Name = "Bring All Ammo",
+   Name = "lấy tất cả đạn",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -607,7 +607,7 @@ end)
 end,
 })
 local ButtonBringAllGuns = BringItemTab:CreateButton({
-   Name = "Bring All Guns",
+   Name = "lấy tất cả súng",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -620,7 +620,7 @@ end)
 end,
 })
 local ButtonBringAllChildren = BringItemTab:CreateButton({
-   Name = "Bring All Children",
+   Name = "lấy tất cả đứa trẻ",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Characters:GetChildren()) do
@@ -633,7 +633,7 @@ end)
 end,
 })
 local ButtonBringAllFoods = BringItemTab:CreateButton({
-   Name = "Bring All Foods",
+   Name = "lấy tất cả đồ ăn",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -646,7 +646,7 @@ end)
 end,
 })
 local ButtonBringAllBody = BringItemTab:CreateButton({
-   Name = "Bring All Body",
+   Name = "lấy tất cả da",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -659,7 +659,7 @@ end)
 end,
 })
 local ButtonBringAllBandage = BringItemTab:CreateButton({
-   Name = "Bring All Bandage",
+   Name = "lấy băng gặt",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -673,7 +673,7 @@ end)
 end,
 })
 local ButtonBringAllMedkit = BringItemTab:CreateButton({
-   Name = "Bring All Medkit",
+   Name = "lấy tất cả bộ dụng cụ y tế",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -686,7 +686,7 @@ end)
 end,
 })
 local ButtonBringAllCoins = BringItemTab:CreateButton({
-   Name = "Bring All Coins",
+   Name = "lấy tất cả đồng xu",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -699,7 +699,7 @@ end)
 end,
 })
 local ButtonBringAllOldRadio = BringItemTab:CreateButton({
-   Name = "Bring All Old Radio",
+   Name = "Mang theo tất cả các đài phát thanh cũ",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -712,7 +712,7 @@ end)
 end,
 })
 local ButtonBringAllTyre = BringItemTab:CreateButton({
-   Name = "Bring All Tyre",
+   Name = "Mang theo tất cả lốp xe",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -725,7 +725,7 @@ end)
 end,
 })
 local ButtonBringAllBrokenFan = BringItemTab:CreateButton({
-   Name = "Bring All Broken Fan",
+   Name = "Mang tất cả quạt hỏng",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -738,7 +738,7 @@ end)
 end,
 })
 local ButtonBringAllBrokenMicrowave = BringItemTab:CreateButton({
-   Name = "Bring All Broken Microwave",
+   Name = "Mang theo tất cả lò vi sóng bị hỏng",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -751,7 +751,7 @@ end)
 end,
 })
 local ButtonBringAllBolt = BringItemTab:CreateButton({
-   Name = "Bring All Bolt",
+   Name = "lấy tất cả bu lông",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -764,7 +764,7 @@ end)
 end,
 })
 local ButtonBringAllBrokenMicrowave = BringItemTab:CreateButton({
-   Name = "Bring All Broken Microwave",
+   Name = "Mang theo tất cả lò vi sóng bị hỏng",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -777,7 +777,7 @@ end)
 end,
 })
 local ButtonBringAllSheetMetal = BringItemTab:CreateButton({
-   Name = "Bring All Sheet Metal",
+   Name = "lấy tất cả sắt vụng",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -803,7 +803,7 @@ end)
 end,
 })
 local ButtonBringAllChair = BringItemTab:CreateButton({
-   Name = "Bring All Chair",
+   Name = "lấy tất cả ghế",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -839,7 +839,7 @@ Label:Set("Item Is In The Map: "..isInTheMap.." (x"..HowManyItemCanShowUp..")","
    end,
 })
 local ButtonBringAllThingsNamedInTextBox = BringItemTab:CreateButton({
-   Name = "Bring All the item with the name you choosed",
+   Name = "Mang theo tất cả các mặt hàng có tên bạn đã chọn",
    Callback = function(Value)
 task.spawn(function()
 for _, Obj in pairs(game.workspace.Items:GetChildren()) do
@@ -855,7 +855,7 @@ end,
 local ValueSpeed = 16
 local OldSpeed = Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
 local PlayerSpeedSlider = PlayerTab:CreateSlider({
-   Name = "Player Speed",
+   Name = "tốc độ người chơi",
    Range = {0, 500},
    Increment = 1,
    Suffix = "Speeds",
@@ -881,10 +881,10 @@ end)
 end,
 })
 local PlayerFlySpeedSlider = PlayerTab:CreateSlider({
-   Name = "Fly Speed(Recommended to put 1 or below 5!)",
+   Name = "bay (chỉnh 1-5 nha)",
    Range = {0, 10},
    Increment = 0.1,
-   Suffix = "Fly Speed",
+   Suffix = "tốc độ bay",
    CurrentValue = 1,
    Flag = "Slider2", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -894,7 +894,7 @@ end,  iyflyspeed = CurrentValue,
 })
 
 local PlayerFlyToggle = PlayerTab:CreateToggle({
-   Name = "Fly",
+   Name = "Bay",
    CurrentValue = false,
    Flag = "ButtonFly", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -908,7 +908,7 @@ task.spawn(function()
 if not AlrActivatedFlyPC then 
 AlrActivatedFlyPC = true
 Rayfield:Notify({
-   Title = "Fly",
+   Title = "Bay",
    Content = "When you enable to fly you can press F to fly/unfly (it won't disable the button!)",
    Duration = 5,
    Image = "rewind",
@@ -950,7 +950,7 @@ UserInputService.InputBegan:Connect(function(input, processed)
 	end
 end)
 local NoCooldownpromptToggle = PlayerTab:CreateToggle({
-   Name = "Instant Prompt",
+   Name = "Lời nhắc tức thì",
    CurrentValue = false,
    Flag = "NoCooldownPrompt1", 
    Callback = function(Value)
@@ -974,7 +974,7 @@ end)
 end,
 })
 local NoFogToggle = PlayerTab:CreateToggle({
-   Name = "No Fog",
+   Name = "Không có sương mù",
    CurrentValue = false,
    Flag = "NoFog1", 
    Callback = function(Value)
@@ -993,7 +993,7 @@ end,
 })
 local ParagraphNote = GameTab:CreateParagraph({Title = "Note", Content = "For Auto Chop Tree and kill aura work equip any of axe and it will work!"})
 local PlayerKillAuraDistanceSlider = GameTab:CreateSlider({
-   Name = "Distance For Kill Aura",
+   Name = "Khoảng cách để tiêu diệt Aura",
    Range = {25, 10000},
    Increment = 0.1,
    Suffix = "Distance",
@@ -1005,7 +1005,7 @@ DistanceForKillAura = Value
 end,  DistanceForKillAura = CurrentValue,
 })
 local KillAuraToggle = GameTab:CreateToggle({
-   Name = "Kill Aura",
+   Name = "hào quang hôi nách",
    CurrentValue = false,
    Flag = "KillAura1", 
    Callback = function(Value)
@@ -1044,7 +1044,7 @@ DistanceForAutoChopTree = Value
 end,  DistanceForAutoChopTree = CurrentValue,
 })
 local AutoChopTreeToggle = GameTab:CreateToggle({
-   Name = "Auto Chop Tree",
+   Name = "Cây chặt tự động",
    CurrentValue = false,
    Flag = "AutoChopTree1", 
    Callback = function(Value)
@@ -1081,7 +1081,7 @@ end)
 end,
 })
 local ButtonTeleportToCampfire = PlayerTab:CreateButton({
-   Name = "Teleport to campfire",
+   Name = "dịch chuyển tới trại",
    Callback = function(Value)
 task.spawn(function()
  game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = Workspace.Map.Campground.MainFire.PrimaryPart.CFrame
@@ -1089,13 +1089,13 @@ end)
 end,
 })
 local ButtonUnloadCheat = SettingsTab:CreateButton({
-   Name = "Unload Cheat",
+   Name = "Dỡ bỏ gian lận",
    Callback = function()
   Rayfield:Destroy()
 end,
 })
 local ActiveEspDistanceToggle = SettingsTab:CreateToggle({
-   Name = "Active Distance for esp",
+   Name = "Khoảng cách chủ động cho esp",
    CurrentValue = false,
    Flag = "EspDistance",
    Callback = function(Value)
@@ -1131,7 +1131,7 @@ while true do
 task.spawn(function()
 	local updatedInfo = getServerInfo()
 	local updatedContent = string.format(
-		"📌 PlaceId: %s\n🔑 JobId: %s\n🧪 IsStudio: %s\n👥 Players: %d/%d",
+		"📌 Địa điểm ID: %s\n🔑 Mã số công việc: %s\n🧪 Là Studio: %s\n👥 Người chơi: %d/%d",
 		updatedInfo.PlaceId,
 		updatedInfo.JobId,
 		
