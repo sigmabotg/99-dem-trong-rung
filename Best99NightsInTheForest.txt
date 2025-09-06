@@ -991,9 +991,9 @@ end
 end)
 end,
 })
-local ParagraphNote = GameTab:CreateParagraph({Title = "Note", Content = "For Auto Chop Tree and kill aura work equip any of axe and it will work!"})
+local ParagraphNote = GameTab:CreateParagraph({Title = "Note", Content = "tụi bây cần dùng rìu hay máy cưa để dùng"})
 local PlayerKillAuraDistanceSlider = GameTab:CreateSlider({
-   Name = "Khoảng cách để tiêu diệt Aura",
+   Name = "sức mạnh của hôi nách ",
    Range = {25, 10000},
    Increment = 0.1,
    Suffix = "Distance",
